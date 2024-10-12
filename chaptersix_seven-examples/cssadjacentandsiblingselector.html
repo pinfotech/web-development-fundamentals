@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjacent and General Sibling Selectors</title>
+    <style>
+      p ~ span {
+        color: blue;
+      }
+      li:first-of-type + li {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>One</li>
+      <li>Two!</li>
+      <li>Three</li>
+    </ul>
+    <span>This is not blue.</span>
+    <p>This is a paragraph.</p>
+    <code>Here is some code.</code>
+    <span>And the blue span is here!</span>
+    <span>And this is a blue span!</span>
+    <code>More code...</code>
+    <div>How are you?</div>
+    <p>Whatever it may be, keep smiling.</p>
+    <h1>Dream big</h1>
+    <h2>that's all.</h2>
+    <span>And yet again this is a blue span!</span>
+  </body>
+</html>
