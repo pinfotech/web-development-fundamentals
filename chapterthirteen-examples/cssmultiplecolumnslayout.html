@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Columns Layout Examples</title>
+    <style>
+      .news {
+        column-count: 3;
+        column-gap: 10px;
+        column-rule-style: solid;
+        column-rule-color: #333;
+        column-width: 20px;
+      }
+      h1 {
+        column-span: all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add a Rule Between the Columns</h1>
+    <p class="news">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Laborum corporis quam
+      totam sequi cupiditate ad, iste ex iusto suscipit dolor autem distinctio
+      odio? Iste ipsum vel aspernatur voluptas ipsam obcaecati!
+    </p>
+    <p class="news">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dicta
+      eaque ab provident! Deserunt tempore neque, expedita minus labore nulla
+      enim nemo, reiciendis amet distinctio architecto tenetur quos, est soluta!
+    </p>
+  </body>
+</html>

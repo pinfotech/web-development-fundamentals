@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Array</title>
+  </head>
+  <body>
+    <!-- Array with indexes-->
+    <script type="text/javascript">
+      document.writeln("Array with Indexes" + "<br>");
+      const rainbowColors = [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "indigo",
+        "violet",
+      ];
+      //accessing an array
+      var firstColor = rainbowColors[0];
+      var fifthColor = rainbowColors[4];
+      document.write("The first value in the array is " + firstColor + "<br>");
+      document.write("The fifth value in the array is " + fifthColor + "<br>");
+
+      document.writeln("Associative Array" + "<br>");
+      balls = {
+        golf: "Golf balls, 6",
+        tennis: "Tennis balls, 3",
+        soccer: "Soccer ball, 1",
+        ping: "Ping Pong balls, 1 doz",
+      };
+      for (ball in balls) document.write(ball + " = " + balls[ball] + "<br>");
+      
+    </script>
+  </body>
+</html>

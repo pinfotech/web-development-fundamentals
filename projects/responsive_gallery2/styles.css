@@ -1,0 +1,71 @@
+div.img {
+    border: 1px solid #ccc;
+}
+div.img:hover {
+    border: 1px solid #777;
+}
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*{
+    box-sizing: border-box;
+}
+/* style the top navigation bar*/
+.topnav{
+    overflow:hidden;
+    background-color: #333;
+
+}
+/* style the topnav links*/
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Chnage color on hover*/
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+/* Onscreens that ate 600px wide or less make the menu links stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px) {
+    .topnav a{
+        float: none;
+        width: 100%;
+        border:solid #fff 2px
+    }
+}

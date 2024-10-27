@@ -1,0 +1,129 @@
+/* setting a global box-sizing fix */
+:root{
+    box-sizing:border-box;
+    }
+    *,
+    ::before,
+    ::after{
+    box-sizing:inherit;
+    }
+    body{
+    background-color:#709b90;
+    font-family: Helvetica,Arial, sans-serif; /* green background color and sans-serif font for the page
+    }
+    body * + * {
+    margin-top:1.5em; // setting global margins
+    }
+    .container{  /* container class to center page content */
+    max-width: 1080px;
+    margin: 0 auto;
+    }
+    .site-nav{
+        display:flex; /* this makes flex container and its childern flex items */
+        padding-left: 0; /* remove the default padding */
+        list-style-type: none; /* remove the default list bullets in the user agent styles */
+        background-color: #5f4b44;
+        padding: .5em;
+       }
+       
+       .site-nav > li{
+        margin-top:0; /* this overide the lobotomized owl top margin */
+
+       }
+       .site-nav > li > a{
+        display: block;
+        background-color: #cc6b5a;
+        color: #fff;
+        text-decoration: none; /* remove the defualt underline from the link in the user agent styles */
+        padding: .5em 1em;
+       }
+       .site-nav >li + li{
+        margin-left: 1.5em;
+       }
+       .site-nav>.nav-right{
+        margin-left: auto;
+       }
+       .tile{
+        padding:1.5em;
+       background-color:#fff;
+       }
+       
+       .flex{
+        display: flex; /* flexbox layout is applied to the main container */
+       }
+       
+       .flex  > * + * { /* this remove the top margin and applies space between the flex items */
+        margin-top: 0;
+        margin-left: 1.5em;  
+       }
+       .column-main{
+        flex:2;
+       }
+       .column-sidebar{
+        flex:1;
+       }
+       .login-form h3{
+        margin:0;
+       font-size: .9em;
+       font-weight:bold;
+       text-align:right;
+       text-transform:uppercase; 
+       }
+       .login-form button{
+        margin-top: 1em;
+        border: 1px solid #cc6b5a;
+        background-color:white;
+        cursor: pointer;
+       }
+       .centered {
+        text-align: center;
+       }
+        
+       .cost{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       }
+       
+       .cost > span {
+        margin-top: 0;
+       }
+       
+       .cost-currency{
+        font-size: 2rem;
+       }
+       
+       .cost-naira{
+        font-size:4rem;
+       }
+       
+       .cost-kobos{
+        font-size: 1.5rem;
+       align-self: flex-start;
+       }
+       .cta-button{
+        display: block;
+        background-color: #cc6b5a;
+        color:#fff;
+        padding: .5em 1em;
+        text-decoration: none;
+       }
+       
+@media screen and (max-width: 600px){
+    .site-nav{
+        padding-left: 0;
+        display: block;
+        background-color: #cc6b5a;
+        text-align: center;
+        margin-left: auto;
+        width: 100%;
+       
+      
+    }
+   
+    .site-nav >li{
+        border-bottom: #fff solid 2px;
+    }
+    
+}

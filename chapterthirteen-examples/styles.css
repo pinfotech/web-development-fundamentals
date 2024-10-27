@@ -1,0 +1,111 @@
+.rcorner{
+    border-radius: 10px 30px 5px 12px;
+    background-color: #83Ad21;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+.rcorner2{
+    border-radius: 20px 30px ;
+    background-color: #95aa22;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+/** rendering the shadow outside the box **/
+.box-shadow
+{
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     border-radius: 10px;
+     background-color:#CCCCCC;
+     -webkit-box-shadow: 5px 5px 10px #555;
+     -moz-box-shadow: 5px 5px 10px #555;
+     box-shadow: 5px 5px 10px #555;
+     width: 160px;
+     height: 160px;
+}
+/* rendering the shadow inside the box*/
+.box-shadow-inside{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+   background-color:#CCCCCC;
+   -webkit-box-shadow: 0 0 20px #fff inset;
+   -moz-box-shadow:  0 0 20px #fff inset;
+    box-shadow:  0 0 20px #fff inset;
+    width: 160px;
+    height: 160px;
+}
+
+.shadow-inside-multiple{
+    width: auto;
+    height: 160px;
+    margin: 0 0 0 80px;
+     -webkit-box-shadow: 0 0 20px #333 inset, 
+                             20px 15px 30px yellow, 
+                             -20px 15px 30px lime, 
+                            -20px -15px 30px blue, 
+                            20px -15px 30px red;
+                         
+    -moz-box-shadow: 0 0 20px #333 inset, 
+                     20px 15px 30px yellow, 
+                     -20px 15px 30px lime, 
+                     -20px -15px 30px blue, 
+                     20px -15px 30px red;
+                      
+    box-shadow: 0 0 20px #333 inset, 
+                20px 15px 30px yellow, 
+                -20px 15px 30px lime, 
+                -20px -15px 30px blue, 
+                20px -15px 30px red;
+    }
+    .btn {
+        width: 100px;
+  height: 100px;
+  border: none;
+  background: slateblue;
+  color: white;
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 1;
+}
+  .btn:hover {
+  transform: translateY(-10px);
+}
+div{
+    width:200px;
+    height: 200px;
+    background-color: #95aa22;
+    transition: width 3s height 5s;
+}
+div:hover{
+     width: 400px;
+     height: 400px;
+     font-size: 4em;
+     background-color: #333;
+    color: #fff;
+
+}
+.shape {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #00F;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.shape:hover {
+    background-color: #FCC;
+    width: 250px;
+    height: 250px;
+    transform: rotate(180deg);
+}
+
+
+
+
+    
+
